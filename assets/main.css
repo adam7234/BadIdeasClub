@@ -1,60 +1,282 @@
+/* =========================================================
+   0) Design Tokens (easy global tweaks)
+   ========================================================= */
+:root{
+  --text:#0f172a;
+  --muted:#475569;
+  --border:#e2e8f0;
+  --bg:#ffffff;
+  --shadow:0 10px 30px rgba(2,6,23,.10);
 
-:root{ --text:#0f172a; --muted:#475569; --border:#e2e8f0; --bg:#fff; --shadow:0 10px 30px rgba(2,6,23,.10); }
+  --container:1100px;
+  --radius:16px;
+}
+
+/* =========================================================
+   1) Base Reset / Defaults
+   - Keep things predictable across browsers
+   ========================================================= */
 *{ box-sizing:border-box; }
-body{ margin:0; background:var(--bg); color:var(--text); font:16px/1.55 -apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
 
-.container{ max-width:1100px; margin:0 auto; padding:48px 24px; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
 
+/* =========================================================
+   2) Layout Helpers
+   - Use .container to center content with consistent padding
+   ========================================================= */
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:48px 24px;
+}
+
+/* =========================================================
+   3) Top Navigation
+   - Sticky + blur for modern feel
+   ========================================================= */
 .topbar{
-  position:sticky; top:0; background:rgba(255,255,255,.9); backdrop-filter:saturate(180%) blur(8px);
+  position:sticky;
+  top:0;
+  background:rgba(255,255,255,.9);
+  backdrop-filter:saturate(180%) blur(8px);
   border-bottom:1px solid var(--border);
-  display:flex; align-items:center; gap:18px;
+
+  display:flex;
+  align-items:center;
+  gap:18px;
   padding:14px 24px;
 }
-.brand{ font-weight:800; text-decoration:none; color:var(--text); letter-spacing:-.02em; }
-.nav{ display:flex; gap:18px; margin:0 auto; }
-.nav a{ text-decoration:none; color:var(--muted); font-weight:600; }
+
+.brand{
+  font-weight:800;
+  text-decoration:none;
+  color:var(--text);
+  letter-spacing:-.02em;
+}
+
+/* Nav links sit in the center */
+.nav{
+  display:flex;
+  gap:18px;
+  margin:0 auto;
+}
+.nav a{
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:600;
+}
 .nav a:hover{ color:var(--text); }
 
-.actions{ display:flex; align-items:center; gap:12px; }
+.actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* =========================================================
+   4) Buttons
+   - One primary button style you can reuse everywhere
+   ========================================================= */
 .btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:10px 14px; border-radius:10px;
-  background:#1d4ed8; color:#fff; text-decoration:none; font-weight:700;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  border-radius:10px;
+
+  background:#1d4ed8;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
 }
 .btn:hover{ filter:brightness(.95); }
 
-.hero{ display:grid; grid-template-columns: 1.2fr .9fr; gap:28px; align-items:start; }
-.hero h1{ font-size:56px; line-height:1.05; letter-spacing:-.03em; margin:0 0 14px; }
-.hero p{ color:var(--muted); margin:0 0 18px; max-width:60ch; }
-.hero .cta{ display:flex; gap:12px; align-items:center; margin-top:8px; }
+/* =========================================================
+   5) Hero
+   - Flex gives you "text left / image right" reliably
+   ========================================================= */
+.hero{
+  padding:64px 0;
+}
 
+.hero-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+}
+
+/* Left column (copy) */
+.hero-copy{
+  flex:1 1 520px;
+  max-width:640px;
+}
+
+.hero h1{
+  font-size:56px;
+  line-height:1.05;
+  letter-spacing:-.03em;
+  margin:0 0 14px;
+}
+
+.hero p{
+  color:var(--muted);
+  margin:0 0 18px;
+  max-width:60ch;
+}
+
+.hero .cta{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-top:8px;
+}
+
+/* Right column (media) */
+.hero-media{
+  flex:0 1 520px;
+  min-width:0;                 /* prevents flex overflow */
+  display:flex;
+  justify-content:flex-end;     /* pushes image to the right */
+}
+
+.hero-media img{
+  width:100%;
+  max-width:520px;              /* make smaller if needed: 420px */
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
+
+/* =========================================================
+   6) Cards
+   - A reusable content block for sections
+   ========================================================= */
 .card{
   border:1px solid var(--border);
-  border-radius:16px;
+  border-radius:var(--radius);
   box-shadow:var(--shadow);
-  padding:18px 18px;
+  padding:18px;
   background:#fff;
 }
-.card h3{ margin:0 0 6px; font-size:16px; }
-.card .sub{ color:var(--muted); font-size:14px; margin-bottom:12px; }
-.card .row{ padding:10px 0; border-top:1px solid var(--border); font-size:14px; }
+
+.card h3{
+  margin:0 0 6px;
+  font-size:16px;
+}
+
+.card .sub{
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:12px;
+}
+
+.card .row{
+  padding:10px 0;
+  border-top:1px solid var(--border);
+  font-size:14px;
+}
 .card .row:first-of-type{ border-top:0; }
 
+/* =========================================================
+   7) Mobile Menu (Burger)
+   - Only shown on small screens
+   ========================================================= */
 .burger{
   display:none;
-  width:42px; height:42px;
+  width:42px;
+  height:42px;
   border:1px solid var(--border);
-  background:#fff; border-radius:12px;
-  padding:10px; cursor:pointer;
+  background:#fff;
+  border-radius:12px;
+  padding:10px;
+  cursor:pointer;
 }
-.burger span{ display:block; height:2px; background:var(--text); margin:5px 0; }
+.burger span{
+  display:block;
+  height:2px;
+  background:var(--text);
+  margin:5px 0;
+}
 
-@media (max-width: 880px){
-  .hero{ grid-template-columns:1fr; }
+/* =========================================================
+   8) Learn Page Layout
+   - Sidebar navigation + main content
+   ========================================================= */
+.learn-layout{
+  display:grid;
+  grid-template-columns:240px 1fr;
+  gap:32px;
+  align-items:start;
+}
+
+.learn-sidebar{
+  position:sticky;
+  top:24px;
+  align-self:start;
+  padding:16px;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  background:#fff;
+  height:fit-content;
+}
+
+.learn-nav-title{
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+.learn-nav-section{
+  margin-top:16px;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  opacity:.7;
+}
+
+.learn-link{
+  display:block;
+  padding:8px 10px;
+  border-radius:10px;
+  text-decoration:none;
+  color:var(--text);
+}
+.learn-link:hover{ background:#f3f4f6; }
+
+/* =========================================================
+   9) Responsive
+   - Collapse hero + nav + learn sidebar
+   ========================================================= */
+@media (max-width: 900px){
+  /* Hero stacks: text then image */
+  .hero-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
   .hero h1{ font-size:42px; }
 
+  .hero-media{
+    justify-content:flex-start;
+    width:100%;
+  }
+  .hero-media img{
+    max-width:100%;
+  }
+
+  /* Learn sidebar becomes normal block */
+  .learn-layout{ grid-template-columns:1fr; }
+  .learn-sidebar{ position:static; }
+}
+
+@media (max-width: 880px){
+  /* Topbar wraps; nav becomes dropdown */
   .topbar{ flex-wrap:wrap; }
+
   .nav{
     display:none;
     width:100%;
@@ -63,69 +285,4 @@ body{ margin:0; background:var(--bg); color:var(--text); font:16px/1.55 -apple-s
     flex-direction:column;
     gap:12px;
   }
-  .nav.open{ display:flex; }
-
-  .burger{ display:inline-block; }
-  .topbar .btn{ display:none; } /* hide only header CTA */
-}
-
-/* learn */ 
-.learn-layout{
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 32px;
-  align-items: start;
-}
-
-.learn-sidebar{
-  position: sticky;
-  top: 24px;
-  align-self: start;
-  padding: 16px;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  background: #fff;
-  height: fit-content;
-}
-
-.learn-nav-title{
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.learn-nav-section{
-  margin-top: 16px;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  opacity: .7;
-}
-
-.learn-link{
-  display: block;
-  padding: 8px 10px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-.learn-link:hover{
-  background: #f3f4f6;
-}
-
-@media (max-width: 900px){
-  .learn-layout{
-    grid-template-columns: 1fr;
-  }
-  .learn-sidebar{
-    position: static;
-  }
-}
-
-.hero-media img {
-  display: block;
-  width: 100%;
-  max-width: 520px;   /* adjust: 420–640 is typical */
-  height: auto;
-  margin: 0 auto;     /* centers it inside hero-media */
-  border-radius: 12px; /* optional */
-}
+  .n
