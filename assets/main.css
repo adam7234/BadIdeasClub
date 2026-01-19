@@ -120,3 +120,12 @@ body{ margin:0; background:var(--bg); color:var(--text); font:16px/1.55 -apple-s
     position: static;
   }
 }
+
+.hero-media img {
+  display: block;
+  width: 100%;
+  max-width: 520px;   /* adjust: 420–640 is typical */
+  height: auto;
+  margin: 0 auto;     /* centers it inside hero-media */
+  border-radius: 12px; /* optional */
+}
