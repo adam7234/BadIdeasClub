@@ -2,8 +2,7 @@ title: Civc Lab
 theme: jekyll-theme-minimal
 
 header_pages:
-  - paths.md
-  - proof.md
   - about.md
+  -
 
-baseurl: "/CivicLab"
+baseurl: "/civicLab"
