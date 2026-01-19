@@ -1,1 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="{{ site.baseurl }}/"> Civic Lab </a>
 
+    <nav class="nav" id="nav">
+      <a href="{{ site.baseurl }}/learn/start">Learn</a>
+      <a href="{{ site.baseurl }}/skills">Show Skills</a>
+      <a href="{{ site.baseurl }}/test">Test</a>
+      <a href="{{ site.baseurl }}/about">About</a>
+    </nav>
+
+    <div class="actions">
+      <a class="btn" href="{{ site.baseurl }}/learn">Get started </a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <script src="{{ site.baseurl }}/assets/main.js"></script>
+</body>
+</html>
