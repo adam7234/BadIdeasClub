@@ -13,7 +13,8 @@ title: Civic Lab
     </div>
   </div>
 
-  <div class="card">
+<div class="card">
+<h3>Civic Lab: What We Do</h3>
 <h3>Civic Lab: What We Do</h3>
 <div class="sub">5-part model</div>
 
@@ -26,6 +27,7 @@ title: Civic Lab
 <div class="row"><strong>4) Editorial Review + Distribution:</strong> Review the best work for clarity, evidence, and usefulness. Publish and send it to the people who can act on it, so contributors see a real path from effort to impact.</div>
 
 <div class="row"><strong>5) Community + Momentum:</strong> Connect civic-minded builders, help them raise their standards, and keep them learning and shipping. The culture is simple: yes you can contribute; yes you can get better; yes you can help Maryland deliver.</div>
-
 </div>
+
+
 </section>
