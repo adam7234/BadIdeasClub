@@ -1,1 +1,37 @@
+/* Make Bootstrap navbar more compact */
+.navbar {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.navbar .container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Smaller brand + tighter line height */
+.navbar-brand {
+  font-size: 18px;
+  line-height: 1.1;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Smaller links */
+.navbar-nav .nav-link {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* Smaller burger button */
+.navbar-toggler {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+/* Make the icon itself slightly smaller */
+.navbar-toggler-icon {
+  width: 1.1em;
+  height: 1.1em;
+}
 
