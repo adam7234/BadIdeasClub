@@ -1,7 +1,7 @@
 /* Make Bootstrap navbar more compact */
 .navbar {
-  padding-top: 6px !important;
-  padding-bottom: 6px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 .navbar .container {
