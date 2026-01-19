@@ -5,16 +5,15 @@ title: Civic Lab
 ---
 
 <section class="hero">
-  <div>
-    <h1>Become a job-ready building maintenance technician.</h1>
-    <p>A step-by-step path: what to learn, what to practice, and what to prove—so you can interview and start strong.</p>
-    <div class="cta">
-      <a class="btn" href="{{ site.baseurl }}/paths">Get started</a>
-    </div>
+<div>
+  <h1>Turn civic participation into real, usable work.</h1>
+  <p>Civic Lab grows civic participation through learn-by-doing projects that produce real deliverables—dashboards, briefs, and tools that help Baltimore and Maryland build, improve services, and take action.</p>
+  <div class="cta">
+    <a class="btn" href="{{ site.baseurl }}/get-involved">Get involved</a>
   </div>
-
+</div>
+  
 <div class="card">
-<h3>Civic Lab: What We Do</h3>
 <h3>Civic Lab: What We Do</h3>
 <div class="sub">5-part model</div>
 
@@ -27,7 +26,6 @@ title: Civic Lab
 <div class="row"><strong>4) Editorial Review + Distribution:</strong> Review the best work for clarity, evidence, and usefulness. Publish and send it to the people who can act on it, so contributors see a real path from effort to impact.</div>
 
 <div class="row"><strong>5) Community + Momentum:</strong> Connect civic-minded builders, help them raise their standards, and keep them learning and shipping. The culture is simple: yes you can contribute; yes you can get better; yes you can help Maryland deliver.</div>
+
 </div>
-
-
 </section>
