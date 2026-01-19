@@ -1,1 +1,9 @@
+title: Technician Ready 
+theme: jekyll-theme-minimal
 
+header_pages:
+  - paths.md
+  - proof.md
+  - about.md
+
+baseurl: "/Technician-ready"
