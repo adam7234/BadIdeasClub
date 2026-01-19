@@ -4,27 +4,48 @@ title: Civic Lab
 ---
 
 <section class="hero">
-<div>
-  <h1>Turn civic participation into real, usable work.</h1>
-  <p>Civic Lab grows civic participation through learn-by-doing projects that produce real deliverables—dashboards, briefs, and tools that help Baltimore and Maryland build, improve services, and take action.</p>
-  <div class="cta">
-    <a class="btn" href="{{ site.baseurl }}/get-involved">Get involved</a>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>Turn civic participation into real, usable work.</h1>
+      <p>
+        Civic Lab grows civic participation through learn-by-doing projects that produce real deliverables—dashboards,
+        briefs, and tools that help Baltimore and Maryland build, improve services, and take action.
+      </p>
+      <div class="cta">
+        <a class="btn" href="{{ site.baseurl }}/get-involved">Get involved</a>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <img
+        src="{{ site.baseurl }}/assets/img/process.png"
+        alt="Civic Lab process: Clear Vision → Value Argument → Master Plan → Segmented Tasks → Execute + Provide Service"
+        loading="lazy"
+      />
+    </div>
   </div>
-</div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="what-we-do">
+  <div class="container">
+    <div class="card">
+      <h2>Civic Lab: What We Do</h2>
+      <div class="sub">5-part model</div>
+
+      <div class="row"><strong>1) Advocate:</strong> Push Maryland and the Baltimore region toward a building economy—real infrastructure delivery, better transit, higher-quality public services at lower cost, and lower housing costs. Support direct investment that benefits lower-income families and children, plus long-run wealth-building tools like a state wealth fund.</div>
+
+      <div class="row"><strong>2) Define the Work:</strong> Translate “progress” into a clear build docket and done-definition for the region—what gets built, who owns it, what success looks like, and what’s blocking delivery. Make outcomes measurable (projects delivered, time-to-approve, on-time/on-budget).</div>
+
+      <div class="row"><strong>3) Learn by Doing:</strong> Run a program that trains contributors by producing real civic deliverables—dashboards, memos, maps, procurement summaries, and legislative one-pagers. Outputs are designed to be useful to agencies, elected officials, and civic groups.</div>
+
+      <div class="row"><strong>4) Editorial Review + Distribution:</strong> Review the best work for clarity, evidence, and usefulness. Publish and send it to the people who can act on it, so contributors see a real path from effort to impact.</div>
+
+      <div class="row"><strong>5) Community + Momentum:</strong> Connect civic-minded builders, help them raise their standards, and keep them learning and shipping. The culture is simple: yes you can contribute; yes you can get better; yes you can help Maryland deliver.</div>
+    </div>
+  </div>
+</section>
+
+
   
-<div class="card">
-<h3>Civic Lab: What We Do</h3>
-<div class="sub">5-part model</div>
-
-<div class="row"><strong>1) Advocate:</strong> Push Maryland and the Baltimore region toward a building economy—real infrastructure delivery, better transit, higher-quality public services at lower cost, and lower housing costs. Support direct investment that benefits lower-income families and children, plus long-run wealth-building tools like a state wealth fund.</div>
-
-<div class="row"><strong>2) Define the Work:</strong> Translate “progress” into a clear build docket and done-definition for the region—what gets built, who owns it, what success looks like, and what’s blocking delivery. Make outcomes measurable (projects delivered, time-to-approve, on-time/on-budget).</div>
-
-<div class="row"><strong>3) Learn by Doing:</strong> Run a program that trains contributors by producing real civic deliverables—dashboards, memos, maps, procurement summaries, and legislative one-pagers. Outputs are designed to be useful to agencies, elected officials, and civic groups.</div>
-
-<div class="row"><strong>4) Editorial Review + Distribution:</strong> Review the best work for clarity, evidence, and usefulness. Publish and send it to the people who can act on it, so contributors see a real path from effort to impact.</div>
-
-<div class="row"><strong>5) Community + Momentum:</strong> Connect civic-minded builders, help them raise their standards, and keep them learning and shipping. The culture is simple: yes you can contribute; yes you can get better; yes you can help Maryland deliver.</div>
-
-</div>
 </section>
