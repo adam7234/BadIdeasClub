@@ -5,4 +5,4 @@ header_pages:
   - about.md
   - team.md
 
-baseurl: "/civicLab"
+baseurl: "/civiclab"
