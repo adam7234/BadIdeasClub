@@ -70,51 +70,41 @@ body{
 }
 
 /* Primary button: glow + gradient (this is what sells “exciting”) */
-.btn-primary{
-  border: 0;
-  border-radius: 999px;
-  padding: 0.6rem 1.1rem;
+/* Respectable primary + secondary (no candy gradient) */
+
+.btn{
+  border-radius: 12px;          /* not pills */
+  padding: 0.62rem 1.05rem;
   font-weight: 650;
-  color: #071021;
-  background-image: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-2) 60%, var(--brand-primary-3) 120%);
-  box-shadow:
-    0 14px 34px rgba(59,130,246,0.18),
-    0 0 0 1px rgba(34,211,238,0.18) inset;
-  transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
+  letter-spacing: 0.1px;
+}
+
+.btn-primary{
+  background: rgba(34,211,238,0.14);
+  color: rgba(226,232,240,0.96);
+  border: 1px solid rgba(34,211,238,0.30);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.28);
 }
 
 .btn-primary:hover{
-  transform: translateY(-1px);
-  filter: brightness(1.05);
-  box-shadow:
-    0 18px 44px rgba(59,130,246,0.26),
-    0 0 0 1px rgba(34,211,238,0.22) inset;
-}
-
-.btn-primary:active{
-  transform: translateY(0);
-  box-shadow:
-    0 12px 28px rgba(59,130,246,0.18),
-    0 0 0 1px rgba(34,211,238,0.18) inset;
+  background: rgba(34,211,238,0.20);
+  border-color: rgba(34,211,238,0.46);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.34), 0 0 0 1px rgba(34,211,238,0.08) inset;
 }
 
 .btn-primary:focus-visible{
   outline: 0;
-  box-shadow:
-    0 0 0 4px rgba(34,211,238,0.22),
-    0 18px 44px rgba(59,130,246,0.26),
-    0 0 0 1px rgba(34,211,238,0.22) inset;
+  box-shadow: 0 0 0 4px rgba(34,211,238,0.18), 0 14px 34px rgba(0,0,0,0.34);
 }
 
-/* Outline buttons: make them actually look good on dark */
 .btn-outline-secondary{
-  border-radius: 999px;
-  border-color: rgba(226,232,240,0.22);
-  color: rgba(226,232,240,0.86);
+  border: 1px solid rgba(226,232,240,0.22);
+  color: rgba(226,232,240,0.90);
 }
+
 .btn-outline-secondary:hover{
-  background: rgba(226,232,240,0.08);
-  border-color: rgba(226,232,240,0.30);
+  background: rgba(226,232,240,0.06);
+  border-color: rgba(226,232,240,0.34);
   color: rgba(226,232,240,1);
 }
 
