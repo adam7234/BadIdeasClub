@@ -1,30 +1,89 @@
-/* Medium-compact navbar (not tiny, not huge) */
+/* ----- Civic Lab brand layer (drop into assets/main.css) ----- */
+
+:root{
+  /* Brand palette (civic-tech, energetic but not neon) */
+  --brand-ink: #0b1220;        /* deep ink */
+  --brand-muted: #475569;      /* slate */
+  --brand-border: rgba(15, 23, 42, 0.10);
+
+  --brand-primary: #2563eb;    /* royal blue */
+  --brand-primary-2: #06b6d4;  /* cyan */
+  --brand-primary-3: #7c3aed;  /* violet (used sparingly) */
+
+  --brand-surface: rgba(255,255,255,0.72);
+
+  /* Bootstrap variable nudges (keeps components consistent) */
+  --bs-body-color: var(--brand-ink);
+  --bs-link-color: var(--brand-primary);
+  --bs-link-hover-color: #1d4ed8;
+  --bs-border-color: var(--brand-border);
+  --bs-body-font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+/* Background that doesn't scream "bootstrap page" */
+body{
+  color: var(--brand-ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(37,99,235,0.18), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(6,182,212,0.14), transparent 55%),
+    radial-gradient(700px 450px at 60% 110%, rgba(124,58,237,0.10), transparent 55%),
+    #f8fafc;
+}
+
+/* Navbar: glassy, modern, not "white bar + border" */
 .navbar{
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  background: var(--brand-surface) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--brand-border) !important;
 }
 
-/* Brand */
-.navbar-brand{
-  font-size: 20px;
-  line-height: 1.1;
-  padding-top: 2px;
-  padding-bottom: 2px;
+.navbar .navbar-brand{
+  letter-spacing: 0.2px;
 }
 
-/* Links */
-.navbar-nav .nav-link{
-  padding-top: 8px;
-  padding-bottom: 8px;
+.navbar .nav-link{
+  color: rgba(11,18,32,0.80);
+  font-weight: 500;
 }
 
-/* Burger */
-.navbar-toggler{
-  padding: 6px 10px;
+.navbar .nav-link:hover,
+.navbar .nav-link:focus{
+  color: rgba(11,18,32,1);
 }
 
-/* Icon size */
-.navbar-toggler-icon{
-  width: 1.25em;
-  height: 1.25em;
+/* Primary button: gradient + pill + subtle lift */
+.btn-primary{
+  border: 0;
+  border-radius: 999px;
+  padding: 0.58rem 1.05rem;
+  font-weight: 600;
+  background-image: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-2) 60%, var(--brand-primary-3) 120%);
+  box-shadow: 0 12px 28px rgba(37,99,235,0.22);
+  transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
+}
+
+.btn-primary:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+  box-shadow: 0 16px 36px rgba(37,99,235,0.28);
+}
+
+.btn-primary:active{
+  transform: translateY(0);
+  box-shadow: 0 10px 22px rgba(37,99,235,0.20);
+}
+
+.btn-primary:focus-visible{
+  outline: 0;
+  box-shadow:
+    0 0 0 4px rgba(37,99,235,0.20),
+    0 12px 28px rgba(37,99,235,0.22);
+}
+
+/* Optional: make containers/cards feel less default */
+.card, .dropdown-menu{
+  border-radius: 16px;
+  border: 1px solid var(--brand-border);
+  box-shadow: 0 10px 24px rgba(2,6,23,0.06);
 }
