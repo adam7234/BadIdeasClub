@@ -1,142 +1,131 @@
-/* ----- Civic Lab: light site + dark nav (recommended) ----- */
-
+/* Accent system */
 :root{
-  /* Site (light) */
-  --site-bg: #f7fafc;
-  --site-ink: #0b1220;
-  --site-muted: #475569;
-  --site-border: rgba(15, 23, 42, 0.10);
+  --accent: #1d4ed8;      /* deep civic blue (serious) */
+  --accent-hi: #0ea5e9;   /* sky (alive, used for glow/ring) */
+  --accent-ink: #0b1220;
 
-  /* Accent */
-  --accent: #2563eb;     /* civic blue */
-  --accent-2: #06b6d4;   /* teal (sparingly) */
-
-  --bs-body-bg: var(--site-bg);
-  --bs-body-color: var(--site-ink);
-  --bs-secondary-color: var(--site-muted);
-  --bs-border-color: var(--site-border);
-  --bs-link-color: var(--accent);
-  --bs-link-hover-color: #1d4ed8;
-  --bs-body-font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  --card-bg: rgba(255,255,255,0.92);
+  --card-border: rgba(15, 23, 42, 0.12);
+  --card-border-hi: rgba(29, 78, 216, 0.22);
+  --card-shadow: 0 18px 46px rgba(2,6,23,0.10);
+  --card-shadow-hi: 0 24px 70px rgba(2,6,23,0.14);
 }
 
-body{
-  background:
-    radial-gradient(1200px 600px at 12% -10%, rgba(37,99,235,0.14), transparent 55%),
-    radial-gradient(900px 520px at 92% 0%, rgba(6,182,212,0.10), transparent 58%),
-    #f7fafc;
-  color: var(--site-ink);
-  overflow-x: hidden;
-}
-
-/* Dark navbar only */
-.navbar{
-  background: rgba(6, 10, 20, 0.88) !important;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.18) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.navbar .nav-link{
-  color: rgba(226,232,240,0.78);
-  font-weight: 500;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus{
-  color: rgba(226,232,240,1);
-}
-
-.navbar .navbar-toggler{
-  border-color: rgba(226,232,240,0.18);
-}
-.navbar .navbar-toggler:focus{
-  box-shadow: 0 0 0 0.2rem rgba(37,99,235,0.20);
-}
-
-/* Buttons: respectable, not bootstrappy */
+/* Buttons: serious + colorful */
 .btn{
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 0.62rem 1.05rem;
-  font-weight: 650;
+  font-weight: 700;
+  letter-spacing: 0.1px;
 }
 
+/* Primary: rich blue with subtle depth (not gradient candy) */
 .btn-primary{
   background: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 10px 26px rgba(37,99,235,0.18);
+  border: 1px solid rgba(29,78,216,0.55);
+  color: rgba(255,255,255,0.96);
+  box-shadow:
+    0 12px 26px rgba(29,78,216,0.22),
+    0 2px 0 rgba(255,255,255,0.08) inset;
 }
 
 .btn-primary:hover{
-  background: #1d4ed8;
-  border-color: #1d4ed8;
-  box-shadow: 0 14px 34px rgba(37,99,235,0.22);
+  background: #1e40af; /* slightly darker */
+  border-color: rgba(14,165,233,0.45); /* living edge */
+  transform: translateY(-1px);
+  box-shadow:
+    0 16px 38px rgba(29,78,216,0.26),
+    0 0 0 1px rgba(14,165,233,0.10) inset;
 }
 
+.btn-primary:active{
+  transform: translateY(0);
+  box-shadow:
+    0 10px 22px rgba(29,78,216,0.18),
+    0 2px 0 rgba(255,255,255,0.06) inset;
+}
+
+.btn-primary:focus-visible{
+  outline: 0;
+  box-shadow:
+    0 0 0 4px rgba(14,165,233,0.28),
+    0 16px 38px rgba(29,78,216,0.22);
+}
+
+/* Outline button: crisp, high-contrast, not gray */
 .btn-outline-secondary{
-  border-color: rgba(15,23,42,0.22);
-  color: rgba(11,18,32,0.88);
+  background: rgba(255,255,255,0.0);
+  border: 1px solid rgba(15,23,42,0.22);
+  color: rgba(11,18,32,0.92);
+  box-shadow: 0 10px 22px rgba(2,6,23,0.04);
 }
 
 .btn-outline-secondary:hover{
-  background: rgba(15,23,42,0.06);
-  border-color: rgba(15,23,42,0.30);
+  background: rgba(29,78,216,0.06);
+  border-color: rgba(29,78,216,0.28);
   color: rgba(11,18,32,1);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(2,6,23,0.06);
 }
 
-/* Cards: clean, modern */
+.btn-outline-secondary:focus-visible{
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(14,165,233,0.20);
+}
+
+/* Cards: pop more */
 .card, .dropdown-menu{
   border-radius: 18px;
-  border: 1px solid var(--site-border);
-  background: rgba(255,255,255,0.86);
-  box-shadow: 0 14px 40px rgba(2,6,23,0.08);
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
 }
 
+/* Add a top accent line so cards feel “designed” */
+.service-card,
+.step-card{
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before,
+.step-card::before{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:0;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(29,78,216,0.95), rgba(14,165,233,0.85));
+  opacity: 0.22;
+}
+
+/* Hover: lift + border glow */
 .service-card{
   transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
-  color: inherit;
 }
 
 .service-card:hover{
-  transform: translateY(-2px);
-  border-color: rgba(37,99,235,0.22);
-  box-shadow: 0 18px 46px rgba(2,6,23,0.10);
+  transform: translateY(-3px);
+  border-color: var(--card-border-hi);
+  box-shadow: var(--card-shadow-hi);
 }
 
+.service-card:hover::before{
+  opacity: 0.55;
+}
+
+/* Make kicker a little bolder so it reads */
 .service-kicker{
   display: inline-block;
   font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
-  color: rgba(71,85,105,0.85);
-  margin-bottom: 0.25rem;
+  font-weight: 700;
+  color: rgba(15,23,42,0.62);
+  margin-bottom: 0.35rem;
 }
 
-/* Hero polish */
-.hero{
-  position: relative;
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:-120px -120px auto -120px;
-  height: 520px;
-  background:
-    radial-gradient(420px 240px at 18% 35%, rgba(37,99,235,0.18), transparent 60%),
-    radial-gradient(420px 240px at 70% 20%, rgba(6,182,212,0.12), transparent 60%);
-  filter: blur(18px);
-  pointer-events:none;
-  z-index: 0;
-}
-.hero > .container{
-  position: relative;
-  z-index: 1;
-}
-.hero img{
-  border: 1px solid rgba(15,23,42,0.10);
-  box-shadow: 0 18px 60px rgba(2,6,23,0.12);
-}
-
+/* Reduce motion */
 @media (prefers-reduced-motion: reduce){
-  .btn-primary, .service-card{ transition: none; }
+  .btn-primary, .btn-outline-secondary, .service-card{ transition: none; }
+  .btn-primary:hover, .btn-outline-secondary:hover{ transform: none; }
 }
