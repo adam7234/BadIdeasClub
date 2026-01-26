@@ -218,6 +218,10 @@ h2{ font-size: clamp(1.55rem, 2.2vw, 1.9rem); }
   letter-spacing: -0.03em !important;
   line-height: 1.05 !important;
 }
+/* Make sure body text stays readable */
+.hero p{
+  font-weight: 450;
+}
 
 /* Bootstrap’s text-secondary can get too light on your background */
 .text-secondary{ color: rgba(71,85,105,0.90) !important; }
