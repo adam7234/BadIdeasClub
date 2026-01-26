@@ -3,59 +3,73 @@ layout: page
 title: About the Lab
 ---
 
-## The Vision
-**Civic Lab is a regional action tank designed to outpace bureaucracy.**
+# Civic Lab
 
-While traditional think tanks produce theory, we produce **agency**. We operate at the intersection of spatial data, urban economics, and community power to solve the structural "locked gears" of the Baltimore–DC corridor. 
+## About the Lab
 
----
+Civic Lab is a Baltimore–DC regional action and research shop that publishes usable civic outputs: briefs, datasets, and maps that help groups make decisions and move projects forward.
 
-## Why We Exist
-The gap between *policy intent* and *community impact* is widening. Residents of the DMV area face a "triad of friction":
-1. **Housing Scarcity:** Zoning laws that prioritize stagnation over growth.
-2. **Transit Inertia:** Infrastructure that prioritizes throughput over access.
-3. **Wealth Extraction:** Systems that move capital out of communities rather than through them.
-
-> **Our Thesis:** Civic change shouldn't require a permission slip or a lobbyist. It requires better data, clearer artifacts, and a learn-by-doing posture.
+We focus on problems where the bottleneck is not intent, but execution: unclear tradeoffs, missing data, fragmented accountability, and slow feedback loops.
 
 ---
 
-## Our Operational Pillars
+## Why we exist
 
-### 1. Radical Housing Affordability
-We don't just advocate for "affordable housing." We analyze the underlying land-use math. We produce the reports and zoning maps necessary to make radical density a political and economic reality.
+The gap between policy intent and lived outcomes keeps widening. In the Baltimore–DC corridor, three constraints show up again and again:
 
-### 2. Transit Equity & Integration
-Connectivity is a human right. We audit regional transit gaps—from the Red Line in Baltimore to the DC metro expansion—identifying high-impact interventions for better rail-to-bus fluidity.
+1. **Housing scarcity**  
+   Rules and process that prevent housing supply from keeping up with demand.
 
-### 3. Sovereign Wealth & Community Assets
-We explore models for neighborhood-scale investment. Our work on sovereign wealth focuses on keeping the value generated in our cities *within* our cities, owned by the people who live there.
+2. **Transit performance**  
+   Networks that are unreliable or disconnected, making access to jobs and services unnecessarily hard.
 
----
+3. **Local wealth leakage**  
+   Value created in a region too often leaves the region, limiting reinvestment and long-term stability.
 
-## The "Artifact" Model
-We don't publish 200-page PDF "shelf-ware." We build **Artifacts**:
-* **The Brief:** A 2-page executive synthesis for decision-makers.
-* **The Analysis:** Open-source datasets that prove a case.
-* **The Action Map:** A spatial guide to what needs to change, where.
+Our thesis is simple: civic progress requires clear, testable claims and usable artifacts that others can pick up and deploy.
 
 ---
 
-## Leadership & Philosophy
-Civic Lab is a decentralized collective of urbanists, developers, and advocates. We are strictly **non-partisan**, **data-first**, and **action-biased**. 
+## What we work on
 
-* **No Fees:** Our work is a public good.
-* **No Red Tape:** We build first, then iterate.
-* **Total Transparency:** All methodologies and data sources are open for audit.
+### 1) Housing affordability through supply and delivery
+We analyze land-use constraints, permitting timelines, and unit economics. We publish zoning summaries, build-out scenarios, and housing pipeline trackers.
+
+### 2) Transit access and network integration
+We evaluate frequency, reliability, and connection quality across modes. We publish corridor scorecards and “high impact, low drama” intervention lists.
+
+### 3) Public wealth-building and community assets
+We study models that keep more value local through ownership, investment vehicles, and asset strategy. We publish model comparisons and Maryland-specific implementation memos.
 
 ---
 
-### Join the Lab
-We are looking for data scientists, urban planners, and neighbors who are tired of waiting for the future to happen to them. 
+## How we operate: the artifact model
 
-[View our Projects]({{ site.baseurl }}/projects) | [Get Involved]({{ site.baseurl }}/get-involved)
+We don’t publish long reports that nobody uses. We ship small, reusable outputs:
 
+- **The brief**  
+  A 1–2 page memo: the claim, the evidence, the options, and the tradeoffs.
 
+- **The analysis**  
+  Open data and a transparent method that someone can audit and reproduce.
 
+- **The map**  
+  A spatial view of where constraints and opportunities actually sit.
 
+---
 
+## Leadership and standards
+
+Civic Lab is a decentralized collective of residents and practitioners. We are non-partisan, data-first, and focused on publishable work.
+
+- No fees. No contracts. No obligations.  
+- Transparent methods and sources.  
+- Clear scope, clear outputs.
+
+---
+
+## Join the Lab
+
+If you can write, analyze, map, model, or sanity-check a claim, you can contribute.
+
+[View our Projects](/projects/) | [Get Involved](/get-involved/)
