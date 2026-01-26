@@ -211,6 +211,13 @@ h2{ font-size: clamp(1.55rem, 2.2vw, 1.9rem); }
   border: 1px solid rgba(15,23,42,0.10);
   box-shadow: 0 18px 60px rgba(2,6,23,0.12);
 }
+/* Hero headline: neutral, institutional */
+.hero h1, .hero .display-5{
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.05 !important;
+}
 
 /* Bootstrap’s text-secondary can get too light on your background */
 .text-secondary{ color: rgba(71,85,105,0.90) !important; }
