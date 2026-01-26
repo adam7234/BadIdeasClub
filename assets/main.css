@@ -1,88 +1,72 @@
-/* Put this at the VERY TOP of your CSS file */
+/* 1) Load fonts from Google Fonts.
+   Inter = clean body text, Fraunces = serious editorial headings. */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
 
-/* ----- Civic Lab: light site + dark nav + serious colorful accents ----- */
+/* 2) Design tokens: change these once and the whole site updates.
+   Think of these as “variables” for color, type, shadows. */
 :root{
-  /* Site (light) */
-  --site-bg: #f7fafc;
-  --site-ink: #0b1220;
-  --site-muted: #475569;
-  --site-border: rgba(15, 23, 42, 0.10);
+  /* Base colors */
+  --bg: #f7fafc;
+  --ink: #0b1220;
+  --muted: #475569;
+  --border: rgba(15, 23, 42, 0.10);
 
-  /* Accent system */
+  /* Accent (teal) */
   --accent: #0f766e;
   --accent-dark: #0b5f59;
   --accent-hi: #14b8a6;
 
-  /* Cards */
+  /* Card look */
   --card-bg: rgba(255,255,255,0.92);
   --card-border: rgba(15, 23, 42, 0.12);
   --card-border-hi: rgba(15, 118, 110, 0.22);
-  --card-shadow: 0 18px 46px rgba(2,6,23,0.10);
-  --card-shadow-hi: 0 24px 70px rgba(2,6,23,0.14);
+  --shadow: 0 18px 46px rgba(2,6,23,0.10);
+  --shadow-hi: 0 24px 70px rgba(2,6,23,0.14);
 
   /* Typography */
- --body-font: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --heading-font: "IBM Plex Serif", ui-serif, Georgia, "Times New Roman", serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-head: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
 
-  --bs-body-font-family: var(--body-font);
-
-  /* Bootstrap nudges */
-  --bs-body-bg: var(--site-bg);
-  --bs-body-color: var(--site-ink);
-  --bs-secondary-color: var(--site-muted);
-  --bs-border-color: var(--site-border);
+  /* Bootstrap variables (so Bootstrap components match your theme) */
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--ink);
+  --bs-secondary-color: var(--muted);
+  --bs-border-color: var(--border);
   --bs-link-color: var(--accent);
   --bs-link-hover-color: var(--accent-dark);
-  --bs-body-font-family: var(--body-font);
+  --bs-body-font-family: var(--font-body);
 }
 
+/* 3) Global page styling (applies everywhere).
+   Background glow = subtle “premium” look without being loud. */
 body{
-  font-family: var(--body-font);
+  font-family: var(--font-body);
+  color: var(--ink);
   background:
     radial-gradient(1200px 600px at 12% -10%, rgba(15,118,110,0.14), transparent 55%),
     radial-gradient(900px 520px at 92% 0%, rgba(20,184,166,0.10), transparent 58%),
-    #f7fafc;
-  color: var(--site-ink);
+    var(--bg);
   overflow-x: hidden;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
-/* Headings: authority, not shouty */
+/* 4) Headings: “real organization” feel.
+   Key move: NO uppercase on headings. */
 h1, h2, h3, h4, h5, h6, .display-5, .navbar-brand{
-  font-family: var(--heading-font) !important;
+  font-family: var(--font-head) !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
-  text-transform: none; /* IMPORTANT */
+  text-transform: none !important;
+  line-height: 1.15;
 }
 
-/* Nav: controlled uppercase is fine */
-.navbar .nav-link{
-  font-family: var(--body-font);
-  text-transform: uppercase;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  font-weight: 700;
-}
+/* Optional: tighten sizing so it reads like a site, not a blog theme */
+h1{ font-size: clamp(2.0rem, 3.2vw, 2.6rem); }
+h2{ font-size: clamp(1.55rem, 2.2vw, 1.9rem); }
 
-/* Buttons: uppercase ok, but don’t overdo tracking */
-.btn{
-  font-family: var(--body-font);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  border-radius: 6px !important;
-}
-
-
-body{
-  background:
-    radial-gradient(1200px 600px at 12% -10%, rgba(15,118,110,0.14), transparent 55%),
-    radial-gradient(900px 520px at 92% 0%, rgba(20,184,166,0.10), transparent 58%),
-    #f7fafc;
-  color: var(--site-ink);
-  overflow-x: hidden;
-}
-
-/* ---------- NAVBAR (dark, always readable) ---------- */
+/* 5) Navbar: dark, readable, slightly frosted (blur).
+   Backdrop blur makes it feel “built,” not default Bootstrap. */
 .navbar{
   background: rgba(6, 10, 20, 0.88) !important;
   border-bottom: 1px solid rgba(148, 163, 184, 0.18) !important;
@@ -92,12 +76,15 @@ body{
 
 .navbar .navbar-brand{
   color: rgba(255,255,255,0.92) !important;
-  letter-spacing: 0.2px;
 }
 
 .navbar .nav-link{
   color: rgba(226,232,240,0.80) !important;
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase; /* uppercase is fine in nav only */
 }
 
 .navbar .nav-link:hover,
@@ -105,100 +92,74 @@ body{
   color: rgba(255,255,255,0.98) !important;
 }
 
-/* Toggler */
-.navbar .navbar-toggler{
-  border-color: rgba(226,232,240,0.18);
-}
-.navbar .navbar-toggler:focus{
-  box-shadow: 0 0 0 0.2rem rgba(20,184,166,0.22);
-}
+/* Navbar toggler focus ring = teal glow for accessibility */
+.navbar .navbar-toggler{ border-color: rgba(226,232,240,0.18); }
+.navbar .navbar-toggler:focus{ box-shadow: 0 0 0 0.2rem rgba(20,184,166,0.22); }
 
-/* ---------- BUTTONS (serious + colorful) ---------- */
+/* 6) Buttons: one consistent base style.
+   Rounded 8px reads serious (not pill, not sharp). */
 .btn{
-  border-radius: 14px;
-  padding: 0.62rem 1.05rem;
+  font-family: var(--font-body);
   font-weight: 700;
-  letter-spacing: 0.1px;
+  border-radius: 8px !important;
+  padding: 0.62rem 1.05rem;
 }
 
-/* Primary (Option 1) */
+/* Primary button (teal) */
 .btn-primary{
   background: var(--accent) !important;
   border: 1px solid rgba(15,118,110,0.55) !important;
   color: rgba(255,255,255,0.96) !important;
-  box-shadow:
-    0 12px 26px rgba(15,118,110,0.18),
-    0 2px 0 rgba(255,255,255,0.08) inset;
+  box-shadow: 0 12px 26px rgba(15,118,110,0.18);
 }
-
 .btn-primary:hover{
   background: var(--accent-dark) !important;
   border-color: rgba(20,184,166,0.55) !important;
   transform: translateY(-1px);
-  box-shadow:
-    0 16px 38px rgba(15,118,110,0.22),
-    0 0 0 1px rgba(20,184,166,0.10) inset;
+  box-shadow: 0 16px 38px rgba(15,118,110,0.22);
 }
-
-.btn-primary:active{
-  transform: translateY(0);
-  box-shadow:
-    0 10px 22px rgba(15,118,110,0.16),
-    0 2px 0 rgba(255,255,255,0.06) inset;
-}
-
 .btn-primary:focus-visible{
   outline: 0;
-  box-shadow:
-    0 0 0 4px rgba(20,184,166,0.28),
-    0 16px 38px rgba(15,118,110,0.20);
+  box-shadow: 0 0 0 4px rgba(20,184,166,0.28), 0 16px 38px rgba(15,118,110,0.20);
 }
 
-/* Outline secondary (crisp ink, not gray) */
+/* Outline secondary = “ink” outline, not gray */
 .btn-outline-secondary{
   background: transparent !important;
   border: 1px solid rgba(15,23,42,0.22) !important;
   color: rgba(11,18,32,0.92) !important;
   box-shadow: 0 10px 22px rgba(2,6,23,0.04);
 }
-
 .btn-outline-secondary:hover{
   background: rgba(15,118,110,0.08) !important;
   border-color: rgba(15,118,110,0.28) !important;
-  color: rgba(11,18,32,1) !important;
   transform: translateY(-1px);
   box-shadow: 0 14px 30px rgba(2,6,23,0.06);
 }
-
 .btn-outline-secondary:focus-visible{
   outline: 0;
   box-shadow: 0 0 0 4px rgba(20,184,166,0.20);
 }
 
-/* Make the nav CTA button pop on dark nav */
+/* Nav CTA button pops slightly more on dark background */
 .navbar .btn-primary{
-  box-shadow:
-    0 10px 22px rgba(0,0,0,0.25),
-    0 0 0 1px rgba(255,255,255,0.08) inset;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
 }
 
-/* ---------- CARDS (pop more) ---------- */
+/* 7) Cards: one consistent card system. */
 .card, .dropdown-menu{
   border-radius: 18px;
   border: 1px solid var(--card-border);
   background: var(--card-bg);
-  box-shadow: var(--card-shadow);
+  box-shadow: var(--shadow);
 }
 
-/* Accent line on top for designed feel */
-.service-card,
-.step-card{
+/* 8) “Artifact” / service cards: subtle top accent line + hover lift. */
+.service-card, .step-card{
   position: relative;
   overflow: hidden;
 }
-
-.service-card::before,
-.step-card::before{
+.service-card::before, .step-card::before{
   content:"";
   position:absolute;
   left:0; right:0; top:0;
@@ -206,27 +167,19 @@ body{
   background: linear-gradient(90deg, rgba(15,118,110,0.95), rgba(20,184,166,0.85));
   opacity: 0.22;
 }
-
 .service-card{
   transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
   color: inherit;
 }
-
 .service-card:hover{
   transform: translateY(-3px);
   border-color: var(--card-border-hi);
-  box-shadow: var(--card-shadow-hi);
+  box-shadow: var(--shadow-hi);
 }
+.service-card:hover::before{ opacity: 0.55; }
+.step-card::before{ opacity: 0.14; }
 
-.service-card:hover::before{
-  opacity: 0.55;
-}
-
-.step-card::before{
-  opacity: 0.14; /* quieter for steps */
-}
-
-/* Kicker */
+/* Small uppercase label style for “kicker” text */
 .service-kicker{
   display: inline-block;
   font-size: 0.72rem;
@@ -237,10 +190,8 @@ body{
   margin-bottom: 0.35rem;
 }
 
-/* ---------- HERO polish ---------- */
-.hero{
-  position: relative;
-}
+/* 9) Hero glow behind the hero section */
+.hero{ position: relative; }
 .hero::before{
   content:"";
   position:absolute;
@@ -253,21 +204,16 @@ body{
   pointer-events:none;
   z-index: 0;
 }
-.hero > .container{
-  position: relative;
-  z-index: 1;
-}
+.hero > .container{ position: relative; z-index: 1; }
 .hero img{
   border: 1px solid rgba(15,23,42,0.10);
   box-shadow: 0 18px 60px rgba(2,6,23,0.12);
 }
 
-/* Bootstrap text-secondary is sometimes too faint */
-.text-secondary{
-  color: rgba(71,85,105,0.90) !important;
-}
+/* Bootstrap’s text-secondary can get too light on your background */
+.text-secondary{ color: rgba(71,85,105,0.90) !important; }
 
-/* Motion respect */
+/* Respect reduced-motion users */
 @media (prefers-reduced-motion: reduce){
   .btn-primary, .btn-outline-secondary, .service-card{ transition: none; }
   .btn-primary:hover, .btn-outline-secondary:hover{ transform: none; }
