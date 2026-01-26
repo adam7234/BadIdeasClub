@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Contributors
 ---
 
@@ -110,4 +110,5 @@ Want to contribute?
 3) Start with a small task this week
 
 [View our Projects](/projects/) | [Get Involved](/get-involved/)
+
 
