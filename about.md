@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: About the Lab
 ---
 
@@ -54,6 +54,7 @@ Civic Lab is a decentralized collective of urbanists, developers, and advocates.
 We are looking for data scientists, urban planners, and neighbors who are tired of waiting for the future to happen to them. 
 
 [View our Projects]({{ site.baseurl }}/projects) | [Get Involved]({{ site.baseurl }}/get-involved)
+
 
 
 
