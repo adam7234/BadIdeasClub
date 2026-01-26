@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: default
 title: Contributors
 ---
-
-# Contributors
 
 Civic Lab runs on small, consistent contributions. Most people spend 1–3 hours per week on a project, ship a piece of work, and get feedback from other contributors.
 
@@ -75,23 +73,25 @@ If you’re early-career, a student, or switching careers: this is a way to buil
 
 ---
 
-## Roles (pick your lane)
+## Roles (pick one)
 
-<div class="row g-4 mt-2">
-  <div class="col-md-6">
-    <div class="p-3 border-start border-4 border-teal">
-      <strong>Research + Writing</strong><br>
-      <span class="small text-muted">Briefs, memos, and policy analysis.</span>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="p-3 border-start border-4 border-teal">
-      <strong>Data + Analysis</strong><br>
-      <span class="small text-muted">Cleaning data and building charts.</span>
-    </div>
-  </div>
-  </div>
-  
+### Research + writing
+Briefs, memos, summaries, policy analysis.
+
+### Data + analysis
+Cleaning data, building simple models, charts, QA on claims.
+
+### Mapping + visuals
+GIS, spatial analysis, maps that explain “where” and “why.”
+
+### Editing + review
+Tightening language, checking logic, making artifacts publishable.
+
+### Project support
+Task breakdowns, issue tracking, keeping scope tight.
+
+---
+
 ## Standards (so the work stays serious)
 
 - Cite sources. No vibes-only claims.
@@ -110,4 +110,3 @@ Want to contribute?
 3) Start with a small task this week
 
 [View our Projects](/projects/) | [Get Involved](/get-involved/)
-
