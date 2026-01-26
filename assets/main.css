@@ -27,6 +27,48 @@
   --bs-link-color: var(--accent);
   --bs-link-hover-color: var(--accent-dark);
   --bs-body-font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+
+* The "Intelligent" Body Font */
+  --bs-body-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* The "Action" Heading Font (Add this variable) */
+  --heading-font: 'Space Grotesk', sans-serif;
+}
+
+/* 2. Global Heading Overrides */
+h1, h2, h3, h4, h5, h6, .display-5, .navbar-brand {
+  font-family: var(--heading-font) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important; /* Tighter for sophistication */
+  text-transform: uppercase; /* The "Manifesto" look */
+}
+
+/* 3. Refine the Buttons for "Action" */
+.btn {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  /* Sharp corners feel more "industrial/serious" than 14px rounds */
+  border-radius: 4px !important; 
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 4. Adjust the Navbar for Clarity */
+.navbar .nav-link {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* 5. The "Artifact" Card Text */
+.card-title {
+  text-transform: none; /* Keep card titles readable */
+  letter-spacing: -0.01em;
+}
+
+
 }
 
 body{
