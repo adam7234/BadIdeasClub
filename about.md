@@ -3,8 +3,6 @@ layout: default
 title: Contributors
 ---
 
-# Contributors
-
 Civic Lab runs on small, consistent contributions. Most people spend 1–3 hours per week on a project, ship a piece of work, and get feedback from other contributors.
 
 This is built for real life: jobs, school, family, limited time. The standard is not time spent — it’s artifacts shipped.
@@ -112,3 +110,4 @@ Want to contribute?
 3) Start with a small task this week
 
 [View our Projects](/projects/) | [Get Involved](/get-involved/)
+
