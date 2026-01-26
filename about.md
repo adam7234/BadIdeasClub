@@ -1,95 +1,114 @@
 ---
-layout: page
-title: About the Lab
+layout: default
+title: Contributors
 ---
 
-Civic Lab is a Baltimore–DC regional action and research shop that publishes usable civic outputs: briefs, datasets, and maps that help groups make decisions and move projects forward.
+# Contributors
 
-We focus on problems where the bottleneck is not intent, but execution: unclear tradeoffs, missing data, fragmented accountability, and slow feedback loops.
+Civic Lab runs on small, consistent contributions. Most people spend 1–3 hours per week on a project, ship a piece of work, and get feedback from other contributors.
 
----
-
-## Why we exist
-
-The gap between policy intent and lived outcomes keeps widening. In the Baltimore–DC corridor, three constraints show up again and again:
-
-1. **Housing scarcity**  
-   Rules and process that prevent housing supply from keeping up with demand.
-
-2. **Transit performance**  
-   Networks that are unreliable or disconnected, making access to jobs and services unnecessarily hard.
-
-3. **Local wealth leakage**  
-   Value created in a region too often leaves the region, limiting reinvestment and long-term stability.
-
-Our thesis is simple: civic progress requires clear, testable claims and usable artifacts that others can pick up and deploy.
+This is built for real life: jobs, school, family, limited time. The standard is not time spent — it’s artifacts shipped.
 
 ---
 
-## What we work on
+## The commitment
 
-### 1) Housing affordability through supply and delivery
-We analyze land-use constraints, permitting timelines, and unit economics. We publish zoning summaries, build-out scenarios, and housing pipeline trackers.
+### 1–3 hours per week
+That’s it. Pick a task, ship it, move the project forward.
 
-### 2) Transit access and network integration
-We evaluate frequency, reliability, and connection quality across modes. We publish corridor scorecards and “high impact, low drama” intervention lists.
-
-### 3) Public wealth-building and community assets
-We study models that keep more value local through ownership, investment vehicles, and asset strategy. We publish model comparisons and Maryland-specific implementation memos.
-
----
-
----
-
-## Learn by doing
-
-Civic Lab is also a continuing education and work exercise. We treat civic work as a skill you build through reps: define a claim, find the data, produce an artifact, publish it, improve it.
-
-We encourage students, early-career people, and career switchers to learn by doing while contributing real public value. You don’t need credentials to start—just the willingness to do careful work in the open.
-
-**What you learn here**
-- How to turn a messy civic problem into a clear question
-- How to find, clean, and document data
-- How to write a brief that decision-makers can actually use
-- How to make maps and simple models that explain tradeoffs
-- How to publish work with sources and reproducible methods
-
-**What you produce**
-- One publishable artifact per cycle (brief, analysis, or map)
-- A public portfolio of work you can point to
-- Skills that transfer to planning, analytics, policy, and civic tech roles
+Examples of what 1–3 hours looks like:
+- Write a 1–2 page brief draft (with sources)
+- Clean and document a dataset
+- Build a simple map or chart
+- Review someone else’s artifact and leave useful comments
+- Turn a messy question into a clear research plan
 
 ---
 
+## How the work happens
 
-## How we operate: the artifact model
+### 1) Join a project
+Projects have clear scope, clear owners, and a defined output.
 
-We don’t publish long reports that nobody uses. We ship small, reusable outputs:
+### 2) Pick a task (small on purpose)
+Tasks are designed to fit inside a short weekly window.
 
-- **The brief**  
-  A 1–2 page memo: the claim, the evidence, the options, and the tradeoffs.
+### 3) Ship an artifact
+Every task produces something usable: a memo, a chart, a map, a dataset, a short write-up.
 
-- **The analysis**  
-  Open data and a transparent method that someone can audit and reproduce.
+### 4) Get feedback
+We build quality through comments, edits, and iteration — not through meetings.
 
-- **The map**  
-  A spatial view of where constraints and opportunities actually sit.
-
----
-
-## Leadership and standards
-
-Civic Lab is a decentralized collective of residents and practitioners. We are non-partisan, data-first, and focused on publishable work.
-
-- No fees. No contracts. No obligations.  
-- Transparent methods and sources.  
-- Clear scope, clear outputs.
+### 5) Publish
+When it’s ready, it becomes a public artifact other people can use.
 
 ---
 
-## Join the Lab
+## Community loop
 
-If you can write, analyze, map, model, or sanity-check a claim, you can contribute.
+### Weekly: async feedback
+Contributors comment on each other’s drafts. The norm is specific, constructive feedback:
+- What claim is being made?
+- What evidence supports it?
+- What’s missing?
+- What’s the cleanest next step?
+
+### Monthly: one meeting
+Once a month we do a short meeting:
+- quick demos (what shipped)
+- what’s blocked
+- what we’re publishing next
+- new questions / new projects
+
+No standing weekly meetings. The work happens in public drafts.
+
+---
+
+## What you get
+
+- A public portfolio of real civic work
+- Practice with data, writing, mapping, and analysis
+- A lightweight community of people who ship
+- A clear way to build credibility without credentials
+
+If you’re early-career, a student, or switching careers: this is a way to build proof-of-work fast.
+
+---
+
+## Roles (pick one)
+
+### Research + writing
+Briefs, memos, summaries, policy analysis.
+
+### Data + analysis
+Cleaning data, building simple models, charts, QA on claims.
+
+### Mapping + visuals
+GIS, spatial analysis, maps that explain “where” and “why.”
+
+### Editing + review
+Tightening language, checking logic, making artifacts publishable.
+
+### Project support
+Task breakdowns, issue tracking, keeping scope tight.
+
+---
+
+## Standards (so the work stays serious)
+
+- Cite sources. No vibes-only claims.
+- Keep scope tight. Prefer a narrow, correct artifact over a broad, fuzzy one.
+- Default to publishable. If it can’t be shared, it should be rare.
+- Respect time. Tasks should fit the 1–3 hour model.
+
+---
+
+## Join
+
+Want to contribute?
+
+1) Pick a project  
+2) Pick your role  
+3) Start with a small task this week
 
 [View our Projects](/projects/) | [Get Involved](/get-involved/)
-
