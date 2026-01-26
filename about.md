@@ -3,10 +3,6 @@ layout: page
 title: About the Lab
 ---
 
-# Civic Lab
-
-## About the Lab
-
 Civic Lab is a Baltimore–DC regional action and research shop that publishes usable civic outputs: briefs, datasets, and maps that help groups make decisions and move projects forward.
 
 We focus on problems where the bottleneck is not intent, but execution: unclear tradeoffs, missing data, fragmented accountability, and slow feedback loops.
@@ -43,6 +39,29 @@ We study models that keep more value local through ownership, investment vehicle
 
 ---
 
+---
+
+## Learn by doing
+
+Civic Lab is also a continuing education and work exercise. We treat civic work as a skill you build through reps: define a claim, find the data, produce an artifact, publish it, improve it.
+
+We encourage students, early-career people, and career switchers to learn by doing while contributing real public value. You don’t need credentials to start—just the willingness to do careful work in the open.
+
+**What you learn here**
+- How to turn a messy civic problem into a clear question
+- How to find, clean, and document data
+- How to write a brief that decision-makers can actually use
+- How to make maps and simple models that explain tradeoffs
+- How to publish work with sources and reproducible methods
+
+**What you produce**
+- One publishable artifact per cycle (brief, analysis, or map)
+- A public portfolio of work you can point to
+- Skills that transfer to planning, analytics, policy, and civic tech roles
+
+---
+
+
 ## How we operate: the artifact model
 
 We don’t publish long reports that nobody uses. We ship small, reusable outputs:
@@ -73,3 +92,4 @@ Civic Lab is a decentralized collective of residents and practitioners. We are n
 If you can write, analyze, map, model, or sanity-check a claim, you can contribute.
 
 [View our Projects](/projects/) | [Get Involved](/get-involved/)
+
