@@ -3,112 +3,76 @@ layout: page
 title: Contributors
 ---
 
-Civic Lab runs on small, consistent contributions. Most people spend 1–3 hours per week on a project, ship a piece of work, and get feedback from other contributors.
+# Civic Lab
 
-This is built for real life: jobs, school, family, limited time. The standard is not time spent — it’s artifacts shipped.
+Civic Lab runs on small, consistent contributions. Most contributors spend **1–3 hours per week** building a concrete artifact and getting feedback.
 
----
+This is built for real life. The standard isn’t time spent — it’s work produced.
 
-## The commitment
+## Time + meeting
 
-### 1–3 hours per week
-That’s it. Pick a task, ship it, move the project forward.
+- **1–3 hours per week** (async)
+- **One meeting per month** (same time each month)
 
-Examples of what 1–3 hours looks like:
-- Write a 1–2 page brief draft (with sources)
-- Clean and document a dataset
-- Build a simple map or chart
-- Review someone else’s artifact and leave useful comments
-- Turn a messy question into a clear research plan
+## What you build
 
----
+Every task produces something usable:
 
-## How the work happens
+- A 1–2 page brief (with sources)
+- A cleaned dataset + notes
+- A chart or map with a caption and takeaway
+- A research plan (question → method → sources → next steps)
+- An edit/review pass that makes someone else’s work publishable
+
+## How it works
 
 ### 1) Join a project
-Projects have clear scope, clear owners, and a defined output.
+Projects have a clear scope, a clear owner, and a defined output.
 
-### 2) Pick a task (small on purpose)
+### 2) Pick a small task
 Tasks are designed to fit inside a short weekly window.
 
-### 3) Ship an artifact
-Every task produces something usable: a memo, a chart, a map, a dataset, a short write-up.
+### 3) Build an artifact
+Memo, chart, map, dataset, short write-up — something others can build on.
 
 ### 4) Get feedback
-We build quality through comments, edits, and iteration — not through meetings.
+We improve through comments and iteration, not meetings.
 
 ### 5) Publish
 When it’s ready, it becomes a public artifact other people can use.
 
----
+## Feedback norm (async)
 
-## Community loop
+Good feedback is specific:
 
-### Weekly: async feedback
-Contributors comment on each other’s drafts. The norm is specific, constructive feedback:
 - What claim is being made?
 - What evidence supports it?
-- What’s missing?
+- What’s missing or unclear?
 - What’s the cleanest next step?
 
-### Monthly: one meeting
-Once a month we do a short meeting:
-- quick demos (what shipped)
-- what’s blocked
-- what we’re publishing next
-- new questions / new projects
+## Monthly meeting (brief)
 
-No standing weekly meetings. The work happens in public drafts.
-
----
+- Quick demos: what got built
+- Blocks + decisions
+- What we’re publishing next
+- New questions / new projects
 
 ## What you get
 
 - A public portfolio of real civic work
-- Practice with data, writing, mapping, and analysis
-- A lightweight community of people who ship
-- A clear way to build credibility without credentials
+- Practice with writing, research, data, mapping, analysis
+- A lightweight community of people who build
+- Credibility built from proof-of-work, not credentials
 
-If you’re early-career, a student, or switching careers: this is a way to build proof-of-work fast.
-
----
-
-## Roles (pick one)
-
-### Research + writing
-Briefs, memos, summaries, policy analysis.
-
-### Data + analysis
-Cleaning data, building simple models, charts, QA on claims.
-
-### Mapping + visuals
-GIS, spatial analysis, maps that explain “where” and “why.”
-
-### Editing + review
-Tightening language, checking logic, making artifacts publishable.
-
-### Project support
-Task breakdowns, issue tracking, keeping scope tight.
-
----
-
-## Standards (so the work stays serious)
+## Standards
 
 - Cite sources. No vibes-only claims.
-- Keep scope tight. Prefer a narrow, correct artifact over a broad, fuzzy one.
-- Default to publishable. If it can’t be shared, it should be rare.
-- Respect time. Tasks should fit the 1–3 hour model.
-
----
+- Keep scope tight. Narrow and correct beats broad and fuzzy.
+- Default to publishable. Private work should be rare.
+- Respect time. Tasks must fit the 1–3 hour model.
 
 ## Join
 
-Want to contribute?
+Pick a project. Pick a role. Build one small artifact this week.
 
-1) Pick a project  
-2) Pick your role  
-3) Start with a small task this week
-
-[View our Projects](/projects/) | [Get Involved](/get-involved/)
-
-
+**View Projects | Get Involved**
