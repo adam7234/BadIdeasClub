@@ -24,8 +24,10 @@
   --shadow-hi: 0 24px 70px rgba(2,6,23,0.14);
 
   /* Typography */
-  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-head: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-head: "IBM Plex Serif", ui-serif, Georgia, "Times New Roman", serif;
+
+  --bs-body-font-family: var(--font-body);
 
   /* Bootstrap variables (so Bootstrap components match your theme) */
   --bs-body-bg: var(--bg);
