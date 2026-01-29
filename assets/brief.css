@@ -66,15 +66,14 @@
 .brief-stat-num{ font-size: 28px; font-weight: 800; }
 .brief-stat-label{ margin-top: 6px; color: var(--muted); font-size: 12.5px; }
 
-@media print{
-  .brief-callout, .brief-stat, img { break-inside: avoid; page-break-inside: avoid; }
-}
-
 @page{
   size: Letter;
   margin: 0.6in;
 }
 
-@media print {
-  .brief-date { display: none !important; }
+@media print{
+  .brief-date{ display:none !important; }   /* only works if that class exists */
+  .brief-callout, .brief-stat{ break-inside: avoid; page-break-inside: avoid; }
+  .brief-page{ padding: 0 !important; }
+  .brief-grid{ grid-template-columns: 1fr !important; }
 }
