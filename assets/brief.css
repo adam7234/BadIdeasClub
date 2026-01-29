@@ -74,3 +74,7 @@
   size: Letter;
   margin: 0.6in;
 }
+
+@media print {
+  .brief-date { display: none !important; }
+}
