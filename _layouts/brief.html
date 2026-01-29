@@ -1,8 +1,12 @@
----
-layout: default
----
-
-<link rel="stylesheet" href="{{ '/assets/brief.css' | relative_url }}">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/brief.css' | relative_url }}">
+</head>
+<body>
 
 <header class="brief-topbar">
   <div class="brief-brand">
@@ -14,8 +18,10 @@ layout: default
   </div>
 
   <div class="brief-meta">
-    <div>{{ page.date | date: "%b %-d, %Y" }}</div>
-    <div>{{ page.author | default: site.author }}</div>
+    {% if page.show_date != false and page.date %}
+      <div class="brief-date">{{ page.date | date: "%b %-d, %Y" }}</div>
+    {% endif %}
+    <div class="brief-author">{{ page.author | default: site.author }}</div>
   </div>
 </header>
 
@@ -38,13 +44,16 @@ layout: default
       {% endif %}
 
       {% if page.stats %}
-      {% for s in page.stats %}
-      <section class="brief-stat">
-        <div class="brief-stat-num">{{ s.number }}</div>
-        <div class="brief-stat-label">{{ s.label }}</div>
-      </section>
-      {% endfor %}
+        {% for s in page.stats %}
+        <section class="brief-stat">
+          <div class="brief-stat-num">{{ s.number }}</div>
+          <div class="brief-stat-label">{{ s.label }}</div>
+        </section>
+        {% endfor %}
       {% endif %}
     </aside>
   </div>
 </main>
+
+</body>
+</html>
