@@ -1,1 +1,51 @@
 
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/brief.css' | relative_url }}">
+
+<header class="brief-topbar">
+  <div class="brief-brand">
+    <div class="brief-mark">CL</div>
+    <div>
+      <div class="brief-org">Civic Labs</div>
+      <div class="brief-tag">{{ page.tagline | default: "Policy Brief" }}</div>
+    </div>
+  </div>
+
+  <div class="brief-meta">
+    <div>{{ page.date | date: "%b %-d, %Y" }}</div>
+    <div>{{ page.author | default: site.author }}</div>
+  </div>
+</header>
+
+<main class="brief-page">
+  <div class="brief-grid">
+    <article class="brief-main">
+      {{ content }}
+    </article>
+
+    <aside class="brief-side">
+      {% if page.takeaways %}
+      <section class="brief-callout">
+        <h3>Key takeaways</h3>
+        <ul>
+          {% for item in page.takeaways %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if page.stats %}
+      {% for s in page.stats %}
+      <section class="brief-stat">
+        <div class="brief-stat-num">{{ s.number }}</div>
+        <div class="brief-stat-label">{{ s.label }}</div>
+      </section>
+      {% endfor %}
+      {% endif %}
+    </aside>
+  </div>
+</main>
