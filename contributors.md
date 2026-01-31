@@ -2,8 +2,6 @@
 layout: page
 title: Contributors
 ---
-# Contributors
-
 Civic Lab runs on small, consistent contributions. Most people spend **1–3 hours per week**, produce one concrete output, and get feedback.
 
 This is built for real life: jobs, school, family, limited time. The standard is not time spent — it’s **useful work published**.
