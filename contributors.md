@@ -26,6 +26,9 @@ This is built for real life: jobs, school, family, limited time. The standard is
 - Review someone else’s draft and leave specific comments
 - Turn a messy question into a clear research plan
 
+## Best practices 
+
+
 ## Roles
 
 Pick one lane (or rotate):
