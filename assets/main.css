@@ -231,3 +231,73 @@ h2{ font-size: clamp(1.55rem, 2.2vw, 1.9rem); }
   .btn-primary, .btn-outline-secondary, .service-card{ transition: none; }
   .btn-primary:hover, .btn-outline-secondary:hover{ transform: none; }
 }
+
+
+/* Civic Lab footer */
+/* Civic Lab footer */
+.site-footer{
+  border-top: 1px solid rgba(15,23,42,0.10);
+  background:
+    radial-gradient(900px 520px at 18% 0%, rgba(15,118,110,0.10), transparent 60%),
+    rgba(255,255,255,0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.site-footer .footer-brand{
+  font-family: var(--font-head);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.site-footer .footer-mark{
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(15,118,110,0.95), rgba(20,184,166,0.85));
+  box-shadow: 0 14px 32px rgba(2,6,23,0.10);
+  border: 1px solid rgba(255,255,255,0.55);
+}
+
+.site-footer .footer-title{
+  font-family: var(--font-body);
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: rgba(11,18,32,0.72);
+  margin-bottom: 0.75rem;
+}
+
+.site-footer .footer-links li{
+  margin: 0.35rem 0;
+}
+
+.site-footer .footer-links a{
+  color: rgba(11,18,32,0.82);
+  text-decoration: none;
+}
+
+.site-footer .footer-links a:hover{
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer .footer-contact{
+  color: rgba(11,18,32,0.88);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15,118,110,0.25);
+}
+
+.site-footer .footer-contact:hover{
+  color: var(--accent-dark);
+  border-bottom-color: rgba(15,118,110,0.55);
+}
+
+.site-footer .footer-rule{
+  border-color: rgba(15,23,42,0.10);
+  opacity: 1;
+}
+
