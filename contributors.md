@@ -2,111 +2,51 @@
 layout: page
 title: Contributors
 ---
+# Contributors
 
-Civic Lab runs on small, consistent contributions. Most people spend 1–3 hours per week on a project, ship a piece of work, and get feedback from other contributors.
+Civic Lab runs on small, consistent contributions. Most people spend **1–3 hours per week**, produce one concrete output, and get feedback.
 
-This is built for real life: jobs, school, family, limited time. The standard is not time spent — it’s artifacts shipped.
+This is built for real life: jobs, school, family, limited time. The standard is not time spent — it’s **useful work published**.
 
----
+## The workflow
 
-## The commitment
+**Pick → Draft → Review → Revise → Publish**
 
-### 1–3 hours per week
-That’s it. Pick a task, ship it, move the project forward.
+1. **Pick a small task** (designed to fit 1–3 hours)
+2. **Draft a first version**
+3. **Get async feedback** (comments on the draft)
+4. **Revise once**
+5. **Publish** when it’s clear, sourced, and useful
 
-Examples of what 1–3 hours looks like:
-- Write a 1–2 page brief draft (with sources)
+## What 1–3 hours looks like
+
+- Draft a 1–2 page brief (with sources)
 - Clean and document a dataset
-- Build a simple map or chart
-- Review someone else’s artifact and leave useful comments
+- Make a simple chart or map
+- Review someone else’s draft and leave specific comments
 - Turn a messy question into a clear research plan
 
----
+## Roles
 
-## How the work happens
+Pick one lane (or rotate):
 
-### 1) Join a project
-Projects have clear scope, clear owners, and a defined output.
+- **Research + writing**: briefs, memos, explainers
+- **Data + analysis**: cleaning, charts, checking claims
+- **Mapping + visuals**: maps and spatial analysis
+- **Editing + review**: tighten language, check logic, prep for publication
+- **Project support**: break tasks down, track progress, keep scope tight
 
-### 2) Pick a task (small on purpose)
-Tasks are designed to fit inside a short weekly window.
+## Standards
 
-### 3) Ship an artifact
-Every task produces something usable: a memo, a chart, a map, a dataset, a short write-up.
-
-### 4) Get feedback
-We build quality through comments, edits, and iteration — not through meetings.
-
-### 5) Publish
-When it’s ready, it becomes a public artifact other people can use.
-
----
-
-## Community loop
-
-### Weekly: async feedback
-Contributors comment on each other’s drafts. The norm is specific, constructive feedback:
-- What claim is being made?
-- What evidence supports it?
-- What’s missing?
-- What’s the cleanest next step?
-
-### Monthly: one meeting
-Once a month we do a short meeting:
-- quick demos (what shipped)
-- what’s blocked
-- what we’re publishing next
-- new questions / new projects
-
-No standing weekly meetings. The work happens in public drafts.
-
----
-
-## What you get
-
-- A public portfolio of real civic work
-- Practice with data, writing, mapping, and analysis
-- A lightweight community of people who ship
-- A clear way to build credibility without credentials
-
-If you’re early-career, a student, or switching careers: this is a way to build proof-of-work fast.
-
----
-
-## Roles (pick one)
-
-### Research + writing
-Briefs, memos, summaries, policy analysis.
-
-### Data + analysis
-Cleaning data, building simple models, charts, QA on claims.
-
-### Mapping + visuals
-GIS, spatial analysis, maps that explain “where” and “why.”
-
-### Editing + review
-Tightening language, checking logic, making artifacts publishable.
-
-### Project support
-Task breakdowns, issue tracking, keeping scope tight.
-
----
-
-## Standards (so the work stays serious)
-
-- Cite sources. No vibes-only claims.
-- Keep scope tight. Prefer a narrow, correct artifact over a broad, fuzzy one.
-- Default to publishable. If it can’t be shared, it should be rare.
+- Cite sources. No unsupported claims.
+- Keep scope tight. Prefer narrow and correct over broad and fuzzy.
+- Default to publishable. Private work should be rare.
 - Respect time. Tasks should fit the 1–3 hour model.
-
----
 
 ## Join
 
-Want to contribute?
+1. Pick a project  
+2. Pick a role  
+3. Start with one small task this week  
 
-1) Pick a project  
-2) Pick your role  
-3) Start with a small task this week
-
-[View our Projects](/projects/) | [Get Involved](/get-involved/)
+**View Projects** | **Get Involved**
