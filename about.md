@@ -3,19 +3,23 @@ layout: page
 title: About Civic Lab
 ---
 
-Civic Lab is a citizen-powered research and writing shop that helps public leaders and organizers move faster.
+Civic Lab is a **Ground Support** engine for the Baltimore–DC region. We turn citizen energy into the strategic marketing and advocacy needed to build an abundant future.
 
-We turn civic curiosity into usable work: briefs, memos, explainers, and creative narratives that sharpen debates and support real decisions. Our premise is simple: there’s a huge amount of underused public talent—people who want to learn, contribute, and build. Civic Lab converts that energy into ground support for policy, projects, and public problem-solving.
+### The Talent Pipeline
+There is a massive, untapped reservoir of talent in our cities—young designers, writers, and thinkers who want to build something real. We convert that "civic curiosity" into professional-grade ground support. By mobilizing citizens to market the ideas that matter, we aren't just changing policy; we are training the next generation of public doers.
 
-We focus on outcomes, not vibes. That means work that can be used in meetings, hearings, campaigns, and planning processes—work that turns heads, clarifies tradeoffs, and helps people act.
+### What We Do
+We take the "hard" issues—the ones buried in 400-page PDFs—and translate them into high-stakes advocacy media. We provide the **Ground Support** that leaders need to move faster and stay bold. We don't do "vibes"; we do narrative ammunition for the people actually doing the work.
 
-Our policy perspective is “build-first”: improve material life for future generations by making it easier to build the essentials—homes, infrastructure, and opportunity—while lowering costs in the systems that crush families.
+### Our North Star: Radical Abundance
+We believe the "stress" of modern life is a policy choice. We advocate for a society that protects people's time and mental health by building enough of what we actually need.
 
-## Priorities
-- Lowering housing costs so shelter is a stable necessity, not a speculative asset class
-- Investing in transit that connects Marylanders to jobs, education, and each other
-- Building public wealth tools (like permanent funds) that help more people become stakeholders
-- Bring healthcare costs under control so resources can move to prevention, infrastructure, and opportunity.
-- Strengthening trades and construction as high-status, high-capability pathways to a better-built society
-- Modernizing capital infrastructure with a focus on long-term performance, not short-term optics
+## Our Priorities
 
+* **Radical Housing Affordability:** Making shelter a stable necessity so families can breathe again.
+* **Sovereign Wealth & Public Tools:** Investing in our own future through community-owned funds and shared stakes.
+* **Investing in Young People:** Creating high-status pathways in trades, governance, and civic tech.
+* **Transit as Freedom:** Moving past "connectivity" to a system that respects people’s time and mobility.
+* **Social Life & Culture:** Designing cities for joy, interaction, and the "third places" that make life worth living.
+* **Effective Governance:** Stripping away the red tape that crushes progress and making "doing good" easier.
+* **Protecting Time:** Fighting the systemic friction that causes unnecessary stress and burnout.
