@@ -4,7 +4,7 @@ theme: minima
 
 # URL Settings
 url: "https://adam7234.github.io" # Root hostname
-baseurl: "/civiclab"                  # The subpath (the name of your repo)
+baseurl: "/BadIdeasClub"                  # The subpath (the name of your repo)
 
 # Navigation
 header_pages:
